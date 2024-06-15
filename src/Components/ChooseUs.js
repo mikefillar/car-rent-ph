@@ -8,8 +8,8 @@ const ChooseUs = () => {
   return (
     <section className="object-fit mt-20 mb-20">
       <img className="w-full" src={cars} alt="cars" />
-      <div className="flex justify-center items-center px-32 gap-20 mt-16">
-        <div className="w-1/2 flex flex-col">
+      <div className="flex flex-col lg:flex-row justify-center items-center px-5 md:px-10 lg:px-20 xl:px-28 text-center lg:text-left gap-20 mt-16">
+        <div className="lg:w-1/2 w-full flex flex-col gap-3">
           <h2 className="font-semibold text-2xl">Why choose us</h2>
           <h1 className="font-bold text-4xl  leading-tight">
             Best valued deals you will ever find
@@ -22,16 +22,16 @@ const ChooseUs = () => {
             experience, so don't miss out on your chance to save big.
           </p>
           <a
-            className="px-6 w-1/3 mt-4 py-4 font-bold text-white hover:shadow-lg hover:shadow-orange-500 bg-orange-600 rounded flex items-center justify-center gap-1 text-lg transition-all ease-linear duration-300"
+            className="px-6 mt-4 py-4 font-bold text-white hover:shadow-lg hover:shadow-orange-500 bg-orange-600 rounded flex items-center justify-center gap-1 text-lg transition-all ease-linear duration-300 w-full"
             href="/#Book"
           >
             Book ride <ion-icon name="checkmark-outline"></ion-icon>
           </a>
         </div>
 
-        <div className="w-1/2 flex flex-col justify-center items-center gap-8 pl-10">
-          <div className="flex gap-4">
-            <img src={country} alt="cross-country" />
+        <div className="w-full lg:w-1/2 flex flex-col justify-center items-center gap-8">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <img className="" src={country} alt="cross-country" />
             <div className="">
               <h1 className="font-bold text-2xl">Cross Country Drive</h1>
               <p className="text-gray-600 mt-2">
@@ -40,8 +40,8 @@ const ChooseUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-4">
-            <img src={price} alt="cross-country" />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <img className="" src={price} alt="cross-country" />
             <div className="">
               <h1 className="font-bold text-2xl">All Inclusive Pricing</h1>
               <p className="text-gray-600 mt-2">
@@ -50,8 +50,8 @@ const ChooseUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-4">
-            <img src={save} alt="cross-country" />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <img className="" src={save} alt="cross-country" />
             <div className="">
               <h1 className="font-bold text-2xl">No Hidden Charges</h1>
               <p className="text-gray-600 mt-2">

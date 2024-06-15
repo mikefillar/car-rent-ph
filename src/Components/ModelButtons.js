@@ -25,39 +25,49 @@ const ModelButtons = () => {
   let display = carDetails.map((car) => {
     return (
       <>
-        <h2 className=" text-center w-full px-4 py-3 bg-orange-500 text-xl text-white">
+        <h2 className=" text-center px-4 py-3 bg-orange-500 text-xl text-white">
           <span className="text-2xl font-bold">&#x20B1; {car.price} </span>/ day
         </h2>
         <table className="text-left">
           <tbody className="border border-gray-600">
             <tr>
-              <th className="pl-5 py-4 border-b border-gray-600">Model</th>
+              <th className="pl-2 sm:pl-5 py-4 border-b border-gray-600">
+                Model
+              </th>
               <td className="border-b border-gray-600">{car.Model}</td>
             </tr>
             <tr>
-              <th className="pl-5 py-4 border-b border-gray-600">Mark</th>
+              <th className="pl-2 sm:pl-5 py-4 border-b border-gray-600">
+                Mark
+              </th>
               <td className="border-b border-gray-600">{car.Mark}</td>
             </tr>
             <tr>
-              <th className="pl-5 py-4 border-b border-gray-600">Year</th>
+              <th className="pl-2 sm:pl-5 py-4 border-b border-gray-600">
+                Year
+              </th>
               <td className="border-b border-gray-600">{car.Year}</td>
             </tr>
             <tr>
-              <th className="pl-5 py-4 border-b border-gray-600">Door</th>
+              <th className="pl-2 sm:pl-5 py-4 border-b border-gray-600">
+                Door
+              </th>
               <td className="border-b border-gray-600">{car.Door}</td>
             </tr>
             <tr>
-              <th className="pl-5 py-4 border-b border-gray-600">AC</th>
+              <th className="pl-2 sm:pl-5 py-4 border-b border-gray-600">AC</th>
               <td className="border-b border-gray-600">{car.AC}</td>
             </tr>
             <tr>
-              <th className="pl-5 py-4 border-b border-gray-600">
+              <th className="pl-2 sm:pl-5 py-4 border-b border-gray-600">
                 Transmission
               </th>
               <td className="border-b border-gray-600">{car.Transmission}</td>
             </tr>
             <tr>
-              <th className="pl-5 py-4 border-b border-gray-600">Fuel</th>
+              <th className="pl-2 sm:pl-5 py-4 border-b border-gray-600">
+                Fuel
+              </th>
               <td className="border-b border-gray-600">{car.Fuel}</td>
             </tr>
           </tbody>
@@ -67,8 +77,8 @@ const ModelButtons = () => {
   });
   return (
     <div className="w-full mb-14">
-      <div className="flex gap-5">
-        <div className="flex flex-col gap-2 w-1/3">
+      <div className="flex flex-col lg:flex-row gap-5">
+        <div className="flex flex-col gap-2 w-full lg:w-1/3">
           {Cars.map((car) => (
             <button
               className={`w-full text-left pl-3 py-5 font-bold text-lg ${toggleAtiveStyle(
@@ -85,14 +95,16 @@ const ModelButtons = () => {
           ))}
         </div>
 
-        <div className="flex items-center justify-center w-full">
-          <img
-            src={carArray[active - 1]}
-            key={carArray[active - 1]}
-            alt="Audi"
-          />
+        <div className="flex flex-col md:flex-row w-full gap-10">
+          <div className="flex items-center justify-center w-full">
+            <img
+              src={carArray[active - 1]}
+              key={carArray[active - 1]}
+              alt="Audi"
+            />
+          </div>
+          <div className="flex flex-col w-full lg:w-1/3 h-full">{display}</div>
         </div>
-        <div className="flex flex-col w-1/3 h-full">{display}</div>
       </div>
     </div>
   );

@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutBooksComponent = ({ src, data }) => {
   return (
-    <div className="flex flex-col justify-center items-center px-20 text-center my-14">
-      <img className="h-full" src={src} alt="about-icon" />
+    <div className="flex flex-col justify-center items-center sm:px-10 md:px-14 lg:px-20 text-center lg:my-14">
+      <img className="" src={src} alt="about-icon" />
       <h1 className="font-bold text-gray-800 text-2xl leading-loose">
         {data.label}
       </h1>

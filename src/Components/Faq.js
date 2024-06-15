@@ -20,17 +20,19 @@ const Faq = () => {
     }
   };
   return (
-    <section className="mt-20 mb-14">
+    <section className="mt-20 mb-14 px-3 sm:px-5 md:px-10">
       <div className="flex items-center justify-center flex-col">
-        <div className="text-center w-1/2 flex flex-col gap-4">
+        <div className="text-center lg:w-3/4 xl:2/3 flex flex-col gap-4">
           <h2 className="font-semibold text-xl">FAQ</h2>
-          <h1 className="font-bold text-4xl">Frequently asked questions</h1>
+          <h1 className="font-bold text-3xl lg:text-4xl">
+            Frequently asked questions
+          </h1>
           <p className="text-gray-600">
             Frequently Asked Questions About the Car Rental Booking Process on
             Our Website: Answers to Common Concerns and Inquiries.
           </p>
         </div>
-        <div className="w-3/4 mt-14 shadow-xl">
+        <div className="w-full lg:w-3/4 mt-14 shadow-xl">
           <div className="">
             <button
               type="button"

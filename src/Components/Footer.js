@@ -5,28 +5,28 @@ const Footer = () => {
   return (
     <>
       <Promo2 />
-      <footer className="mt-14 px-10 py-20 mb-10">
-        <div className="flex gap-20 bg-white">
-          <div className="w-1/4 flex flex-col gap-3">
+      <footer className="mt-14 px-5 md:px-10 py-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-20 bg-white">
+          <div className="w-full text-center lg:text-left flex flex-col gap-3">
             <h1 className="font-bold text-2xl uppercase">Car Rental PH</h1>
             <p className="text-gray-600">
               We offer a big range of vehicles and We have the perfect car to
               meet all of your driving needs.
             </p>
-            <p className="flex items-center justify-start gap-2 font-semibold hover:text-orange-600 cursor-pointer mt-3">
+            <p className="flex items-center justify-center lg:justify-start gap-2 font-semibold hover:text-orange-600 cursor-pointer mt-3">
               <span className="font-semibold text-orange-600 text-xl">
                 <ion-icon name="call-outline"></ion-icon>
               </span>{" "}
-              (123)-456-789
+              (123) 456-789
             </p>
-            <p className="flex items-center justify-start gap-2 font-semibold hover:text-orange-600 cursor-pointer">
+            <p className="flex items-center justify-center lg:justify-start gap-2 font-semibold hover:text-orange-600 cursor-pointer">
               <span className="font-semibold text-orange-600 text-xl">
                 <ion-icon name="mail-outline"></ion-icon>
               </span>{" "}
               carrentalph@gmail.com
             </p>
           </div>
-          <div className="w-1/4 flex flex-col gap-3 px-14">
+          <div className="w-full text-center lg:text-left flex flex-col gap-3 lg:px-14">
             <h1 className="font-bold text-2xl uppercase">Company</h1>
             <ul className="flex flex-col gap-2">
               <li className="hover:text-orange-600 cursor-pointer text-gray-600">
@@ -46,13 +46,18 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="w-1/4 flex flex-col gap-3">
+          <div className="w-full text-center lg:text-lef flex flex-col gap-3">
             <h1 className="font-bold text-2xl uppercase">Working Hours</h1>
-            <p className="text-gray-600">Mon - Fri : 9:00AM - 9:00PM</p>
-            <p className="text-gray-600">Sat : 10:00AM - 7:00PM</p>
-            <p className="text-gray-600">Sun : Closed</p>
+            <p className="text-gray-600">
+              Mon - Fri :{" "}
+              <span className="block sm:inline-block">9:00AM - 9:00PM</span>
+            </p>
+            <p className="text-gray-600">
+              Sat - Sun :{" "}
+              <span className="block sm:inline-block">10:00AM - 7:00PM</span>
+            </p>
           </div>
-          <div className="w-1/4 flex flex-col gap-3">
+          <div className="w-full text-center lg:text-lef flex flex-col gap-3">
             <h1 className="font-bold text-2xl uppercase">Subscription</h1>
             <p className="text-gray-600">
               Subscribe your email address for latest news and update

@@ -24,14 +24,14 @@ const Book = () => {
     "VMW Passat CC",
   ];
   return (
-    <section className="px-10 py-5 mb-10" id="Book">
-      <div className="rounded px-20 py-10 bg-white shadow-xl flex flex-col gap-5">
-        <h2 className="font-bold text-2xl">Book a car</h2>
+    <section className="sm:px-5 lg:px-10 py-5 mb-10" id="Book">
+      <div className="rounded px-5 lg:px-20 py-10 bg-white shadow-xl flex flex-col gap-5">
+        <h2 className="font-bold text-xl lg:text-2xl">Book a car</h2>
         <div>
           <p className="hidden">error message</p>
         </div>
         <div>
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Select
               data={{
                 label: "Select your car type",

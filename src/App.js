@@ -5,10 +5,10 @@ import AboutBook from "./Components/AboutBook";
 import Models from "./Components/Models";
 import Promo from "./Components/Promo";
 import ChooseUs from "./Components/ChooseUs";
-import Footer from "./Components/Footer";
 import Reviews from "./Components/Reviews";
 import Faq from "./Components/Faq";
 import Download from "./Components/Download";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
